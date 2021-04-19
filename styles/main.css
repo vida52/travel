@@ -1,0 +1,247 @@
+body {
+  margin: 0;
+  font-family: "ubuntu", sans-serif;
+  color: rgb(48, 48, 99);
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  background-color: #f2f2f2;
+}
+
+.navigation a {
+  font-weight: 300;
+  text-decoration: none;
+  color: #333;
+}
+
+.navigation a :hover {
+  text-decoration: none;
+  color: lightblue;
+}
+
+.navigation ul,
+.footer-links ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation li,
+.footer-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.navigation .logo img {
+  width: 80px;
+}
+
+/* Hero content  */
+.hero-content {
+  position: relative;
+}
+
+.hero-content img {
+  width: 100%;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 54px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* section-global */
+.section {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto 80px;
+}
+
+/* section-abaut */
+.section about a {
+  color: rgb(44, 57, 87);
+}
+
+/* section-features */
+.section-features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-features .feature {
+  width: 30%;
+}
+
+.section-features .feature img {
+  width: 100%;
+}
+
+.section-features .feature-text {
+  display: block;
+  margin: 12px 0 16px;
+}
+
+.section-features .feature-sub-text {
+  display: block;
+  font-size: 14px;
+  text-align: justify;
+}
+/* Section-app */
+
+.section-app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-app .app-image {
+  width: 30%;
+  flex-grow: 1;
+  margin-right: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.section-app .text-container {
+  width: 30%;
+  flex: 0 1 30%;
+}
+.section-app .text-container h3 {
+  font-size: 28px;
+}
+
+.section-app .text-container p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.section-app .app-image img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.section-app .app-image:hover img {
+  transform: scale(1.18);
+}
+
+/* footer */
+footer {
+  background-color: #333;
+  color: #dedede;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.footer-links a {
+  color: #dedede;
+}
+/* Responsive */
+@media (max-width: 1100px) {
+  .section {
+    max-width: none;
+    padding: 0 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 920px) {
+  .hero-text {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 780px) {
+  .navigation {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .navigation .logo img {
+    width: 40px;
+    margin-bottom: 20px;
+  }
+
+  .hero-text {
+    font-size: 22px;
+  }
+  /* Section global */
+  .section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .section-about p {
+    text-align: justify;
+  }
+  .section-features {
+    flex-direction: column;
+  }
+
+  .section-features .feature {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .section-features .feature-text {
+    font-size: 17;
+  }
+
+  .section-features .feature-sub-text {
+    font-size: 15;
+  }
+
+  /* App */
+  .section-app {
+    flex-direction: column;
+  }
+  .section-app .app-image {
+    width: 100%;
+    margin-right: 0;
+    border-radius: 20px;
+  }
+
+  .section-app .text-container {
+    width: 100%;
+    flex: 1 0 auto;
+  }
+  .section-app .text-container h3 {
+    font-size: 28px;
+  }
+
+  .section-app .text-container p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .section-app .app-image:hover img {
+    transform: scale(1.18);
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .footer-links li {
+    display: block;
+    margin: 0;
+    margin-top: 14px;
+  }
+}
